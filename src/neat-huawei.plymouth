@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Neat Huawei
+Description=HiDPI-Friendly Plymouth Theme with vendor logo Huawei
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/neat-huawei/assets
+ScriptFile=/usr/share/plymouth/themes/neat-huawei/neat-huawei.script

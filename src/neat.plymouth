@@ -1,8 +1,0 @@
-[Plymouth Theme]
-Name=Neat
-Description=HiDPI-Friendly Plymouth Theme for Arch Linux
-ModuleName=script
-
-[script]
-ImageDir=/usr/share/plymouth/themes/neat/assets
-ScriptFile=/usr/share/plymouth/themes/neat/neat.script

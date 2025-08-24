@@ -1,14 +1,21 @@
-# Plymouth Theme Neat
+# Plymouth Theme Neat Huawei
+HiDPI-Friendly Plymouth Theme with huawei vendor logo.
 
-HiDPI-Friendly Plymouth Theme for Arch Linux
+Based on the original [Plymouth Theme Neat](https://github.com/neetly/plymouth-theme-neat) for Arch Linux.
 
 | Default                                          | Password                                           |
 | ------------------------------------------------ | -------------------------------------------------- |
 | ![Default Screenshot](./screenshots/default.png) | ![Password Screenshot](./screenshots/password.png) |
 
+
+## Install theme
 ```sh
-paru -S --needed plymouth-theme-neat
-sudo plymouth-set-default-theme neat
-echo "DeviceScale=1" | sudo tee -a /etc/plymouth/plymouthd.conf
-sudo mkinitcpio -P
+sudo cp -r src/ /usr/share/plymouth/themes/neat-huawei
+sudo plymouth-set-default-theme -R neat-huawei
+```
+
+## Uninstall theme
+```sh
+sudo rm -rf /usr/share/plymouth/themes/neat-huawei
+sudo plymouth-set-default-theme -R bgrt
 ```
